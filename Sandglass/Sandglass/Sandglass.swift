@@ -9,7 +9,7 @@ class Sandglass {
 
     private(set) var running = false
 
-    private let timerSource: DispatchSource
+    private let timerSource: DispatchSourceTimer
 
     class func scheduleOneshot(interval: TimeInterval,
                                queue: DispatchQueue = .main,
@@ -30,13 +30,13 @@ class Sandglass {
     }
 
     init(interval: TimeInterval, repeats: Bool = false, queue: DispatchQueue = .main, action: @escaping () -> ()) {
-        timerSource = DispatchSource.makeTimerSource(queue: queue) as! DispatchSource
+        timerSource = DispatchSource.makeTimerSource(queue: queue)
         timerSource.setEventHandler(handler: action)
 
         if !repeats {
-            timerSource.scheduleOneshot(deadline: .now() + interval)
+            timerSource.schedule(deadline: .now() + interval, repeating: .never)
         } else {
-            timerSource.scheduleRepeating(deadline: .now() + interval, interval: interval)
+            timerSource.schedule(deadline: .now() + interval, repeating: interval)
         }
     }
 
@@ -71,10 +71,6 @@ class Sandglass {
     func cancel() {
         timerSource.cancel()
         running = false
-    }
-
-    deinit {
-        print("Timer dealloc")
     }
 
 }
