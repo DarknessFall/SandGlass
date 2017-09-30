@@ -12,6 +12,7 @@
 		929DCA3D1F7F9E7D0062809A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929DCA3B1F7F9E7D0062809A /* Main.storyboard */; };
 		929DCA3F1F7F9E7D0062809A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929DCA3E1F7F9E7D0062809A /* Assets.xcassets */; };
 		929DCA421F7F9E7D0062809A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929DCA401F7F9E7D0062809A /* LaunchScreen.storyboard */; };
+		D70E3D1F10D5D065CC6B527A /* Sandglass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70E3CA3CB9E995A1FBB5525 /* Sandglass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		929DCA3E1F7F9E7D0062809A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929DCA411F7F9E7D0062809A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		929DCA431F7F9E7D0062809A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70E3CA3CB9E995A1FBB5525 /* Sandglass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sandglass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,21 @@
 		929DCA361F7F9E7D0062809A /* Sandglass */ = {
 			isa = PBXGroup;
 			children = (
+				929DCA491F7FA1E10062809A /* Sandglass */,
 				929DCA371F7F9E7D0062809A /* AppDelegate.swift */,
 				929DCA391F7F9E7D0062809A /* ViewController.swift */,
 				929DCA3B1F7F9E7D0062809A /* Main.storyboard */,
 				929DCA3E1F7F9E7D0062809A /* Assets.xcassets */,
 				929DCA401F7F9E7D0062809A /* LaunchScreen.storyboard */,
 				929DCA431F7F9E7D0062809A /* Info.plist */,
+			);
+			path = Sandglass;
+			sourceTree = "<group>";
+		};
+		929DCA491F7FA1E10062809A /* Sandglass */ = {
+			isa = PBXGroup;
+			children = (
+				D70E3CA3CB9E995A1FBB5525 /* Sandglass.swift */,
 			);
 			path = Sandglass;
 			sourceTree = "<group>";
@@ -138,6 +149,7 @@
 			files = (
 				929DCA3A1F7F9E7D0062809A /* ViewController.swift in Sources */,
 				929DCA381F7F9E7D0062809A /* AppDelegate.swift in Sources */,
+				D70E3D1F10D5D065CC6B527A /* Sandglass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
