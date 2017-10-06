@@ -74,3 +74,11 @@ class Sandglass {
     }
 
 }
+
+extension Sandglass {
+    
+    class func countDown(totalSeconds: Int64, format: TimeFormat) {
+        
+    }
+    
+}
